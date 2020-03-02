@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage DATA ENTRY</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Personal data</h1>
+    <hr>
+    <form>
+        <ol type="1">
+            <li>Nama: <input type="text" name="name" id="name"></li>
+            <li>NRP: <input type="number" name="nrp" id="nrp"></li>
+            <li>Kelas: <input type="text" name="kelas" id="kelas"></li>
+            <li>Jenis Kelamin:
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Pria</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Wanita</label>
+            </li>
+            <li>Agama:
+                <select name="religion" id="religion">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="konghucu">Konghucu</option>
+                </select>
+            </li>
+            <li>Tempat/Tanggal Lahir: <input type="text" name="ttl-tempat" id="ttl-tempat"> / <input type="text" name="ttl-tgl" id="ttl-tgl"></li>
+            <li>Alamat:
+                <br>
+                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+            </li>
+            <li>Riwayat Pendidikan:
+                <ol type="a">
+                    <li>SD: <input type="text" name="pendidikan-sd" id="pendidikan-sd"></li>
+                    <li>SMP: <input type="text" name="pendidikan-smp" id="pendidikan-smp"></li>
+                    <li>SMA: <input type="text" name="pendidikan-sma" id="pendidikan-sma"></li>
+                </ol>
+            </li>
+            <li>Email: <input type="email" name="email" id="email"></li>
+            <li>Homepage: <input type="text" name="homepage" id="homepage"></li>
+            <li>Hobby:
+                <br>
+                <textarea name="hobby" id="hobby" cols="30" rows="5"></textarea>
+            </li>
+            <li>Interest:
+                <input type="checkbox" name="komputer" id="komputer">
+                <label for="komputer">Komputer</label>
+                <input type="checkbox" name="sport" id="sport">
+                <label for="sport">Sport</label>
+                <input type="checkbox" name="travelling" id="travelling">
+                <label for="travelling">Travelling</label>
+                <input type="checkbox" name="writing" id="writing">
+                <label for="writing">Writing</label>
+                <input type="checkbox" name="reading" id="reading">
+                <label for="reading">Reading</label>
+            </li>
+        </ol>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+
+</html>
