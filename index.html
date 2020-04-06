@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="myform">
+        <h1 class="title">New Job</h1>
+        <div class="my_button">
+            <input type="submit" value="save">
+            <input type="reset" value="back">
+        </div>
+        <div class="form">
+            <h4>Primary Information</h4>
+            <hr>
+            <table>
+                <tr>
+                    <th>Title:</th>
+                    <td>
+                        <input type="text" name="title"> <br>
+                        <span>max. 50 characters</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Job Type:</th>
+                    <td>
+                        <select name="job" id="job">
+                        <option value="Reguler Job">Reguler Job</option>
+                        <option value="Appointment">Appointment</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Date:</th>
+                    <td>
+                        <span>
+                            <select name="month" id="month"></select>
+                        </span>
+                        <span>
+                            <select name="day" id="day"></select>
+                        </span>
+                        <span>
+                    <select name="year">
+                         <option value="2019">2019</option>
+                         <option value="2020">2020</option>
+                    </select>
+                    </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Time:</th>
+                    <td>
+                        <input type="radio" name="time" id="all_day" value="all_day">
+                        <label for="all_day">This is an <b>all day</b> job</label> <br>
+                        <input type="radio" name="time" id="dur" value="dur">
+                        <label for="dur">
+                        Start at : 
+                        <span>
+                            <select name="hour_start" id="start"></select>
+                        </span>
+                        <span>
+                            <select name="minute_start" id="start_m"></select>
+                        </span>
+                        <br>
+                        Duration : 
+                        <span>
+                            <select name="dur_start" id="d_h"></select>
+                        </span>
+                        <span>
+                            <select name="dur_minute" id="d_m"></select>
+                        </span>
+                    </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td><input type="text" name="loc" id="loc"></td>
+                </tr>
+                <tr>
+                    <th>Notes:</th>
+                    <td>
+                        <textarea name="notes" id="notes" cols="60" rows="5"></textarea><br>
+                        <span>max. 120 characters</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="my_button">
+            <input type="submit" value="save">
+            <input type="reset" value="back">
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

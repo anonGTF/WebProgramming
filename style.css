@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(blue, white) no-repeat;
+}
+
+.my_button {
+    background-color: #b2b02b;
+    margin: 1rem 1rem 1rem;
+    padding: 1rem;
+}
+
+.form {
+    margin: 0 1rem 0 1rem;
+}
+
+.title {
+    color: green;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid white;
+    background-color: #dce067;
+}
